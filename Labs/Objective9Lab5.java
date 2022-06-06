@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodsLab4 {
+public class Objective9Lab5 {
 
   public static void main(String[] args) {
     Scanner kb = new Scanner (System.in);
@@ -43,14 +43,18 @@ public class MethodsLab4 {
 
       case 4:
         System.out.println("You've chosen to quit");
+        keepGoing = false;
         break;
 
-      case 5:
-        System.out.println("invalid entry. Please try again!");
+      default:
+        System.out.println("Invalid entry. Please try again!");
+        break;
 		}
-		kb.close();
-
 	}
+  kb.close();
+
+ }
+
 
 	public static void printMenu() {
 		System.out.println();
@@ -84,9 +88,8 @@ public class MethodsLab4 {
   // to pay based on the total of the two parameters. Use a tax rate of 8.31%
   // (Not a grand total, just the total taxes.  Refer to "Expected Output")
   public static double calcTax(double x, double y){
-    double tax1 = x * 8.31%;
-    double tax2 = y * 8.31%;
+    double tax1 = x * 0.0831;
+    double tax2 = y * 0.0831;
     return findSum(tax1, tax2);
   }
-
 }
